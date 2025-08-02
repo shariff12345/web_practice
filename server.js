@@ -5,7 +5,7 @@ const port = 3000;
 
 const appName = process.env.APP_NAME
 
-Arts_filesapp.use('/Peoples of the Philippines_ Tausug - National Commission for Culture and the ', express.static(path.join(__dirname, 'Peoples of the Philippines_ Tausug - National Commission for Culture and the Arts_files')));
+Arts_filesapp.use('/', express.static(path.join(__dirname, '')));
 
 app.use('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
@@ -15,5 +15,6 @@ app.use('/', (req, res) => {
 app.listen(port, () => {
     console.log(`${appName} is listening on port ${port}`);
 });
+
 
 
